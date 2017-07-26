@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  web:
+    # image: http_server_image
+    build: .
+    container_name: http_server_container
+    ports:
+        - 8080
+
+  # the second service?
