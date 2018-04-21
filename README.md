@@ -6,8 +6,8 @@ but leave some questions and tips for brainstorming :-)
 
 # Prerequisites
 
-- Docker-CE 17.03+, or legacy Docker-engine 1.10.0+
-- Docker Compose 1.10.0+
+- Docker-CE 17.12+
+- Docker Compose 1.18.0+
 
 
 # Follow the steps
