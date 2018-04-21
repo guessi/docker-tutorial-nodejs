@@ -1,3 +1,5 @@
+'use strict';
+
 var os = require("os");
 var http = require("http");
 
