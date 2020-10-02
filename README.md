@@ -6,8 +6,8 @@ but leave some questions and tips for brainstorming :-)
 
 # Prerequisites
 
-- Docker-CE 17.12+
-- Docker Compose 1.18.0+
+- Docker-CE 19.03+
+- Docker Compose 1.27.0+
 
 
 # Follow the steps
@@ -94,9 +94,9 @@ Question: hot to setup database connection between **web** service and database?
 
 # Reference
 
+- [Container Runtime](https://www.docker.com/products/container-runtime)
 - [Docker Engine](https://docs.docker.com/engine/)
-- [Docker CE](https://www.docker.com/community-edition)
-- [Docker Compose](https://docs.docker.com/compose/overview/)
+- [Docker Compose](https://docs.docker.com/compose/)
 - [Dockerfile Reference](https://docs.docker.com/engine/reference/builder/)
 
 
