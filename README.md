@@ -35,7 +35,7 @@ if possible, try to use official image, but not to create customized one
         -v $(pwd):/opt/app:ro    \
         -w /opt/app              \
         -p 8080                  \
-        node:14-alpine           \
+        node:16-alpine           \
           node httpServer.js
 
 Question: how do I expose 8080 to world?
