@@ -6,8 +6,7 @@ but leave some questions and tips for brainstorming :-)
 
 # Prerequisites
 
-- Docker-CE 19.03+
-- Docker Compose 1.27.0+
+- Docker-CE 20.10+
 
 
 # Follow the steps
@@ -35,7 +34,7 @@ if possible, try to use official image, but not to create customized one
         -v $(pwd):/opt/app:ro    \
         -w /opt/app              \
         -p 8080                  \
-        node:16-alpine           \
+        node:18-alpine           \
           node httpServer.js
 
 Question: how do I expose 8080 to world?
@@ -61,7 +60,7 @@ Question: how do I check the console log while it is running as daemon?
 
     $ cat docker-compose.yaml
 
-    $ docker-compose down && docker-compose up
+    $ docker compose down && docker compose up
 
 Question: when to use **down** command?
 
@@ -70,14 +69,14 @@ Question: when to use **down** command?
 
     $ vim httpServer.js
 
-    $ docker-compose up
+    $ docker compose up
 
 Question: why is the app not updated?
 
 
 ### Step 9: Increase capacity with "scale"
 
-    $ docker-compose scale web=2
+    $ docker compose scale web=2
 
 Question: why this command will failed? how to achieve the scaling goal?
 
@@ -94,9 +93,6 @@ Question: hot to setup database connection between **web** service and database?
 
 # Reference
 
-- [Container Runtime](https://www.docker.com/products/container-runtime)
-- [Docker Engine](https://docs.docker.com/engine/)
-- [Docker Compose](https://docs.docker.com/compose/)
 - [Dockerfile Reference](https://docs.docker.com/engine/reference/builder/)
 
 
